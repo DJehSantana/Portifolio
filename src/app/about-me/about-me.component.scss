@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+.background {
+    width: 100vw;
+    height: 90vh;
+    background-image: url('../../assets/images/background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* A imagem cobrirá toda a div */
+}
+
+.title {
+    width: 680px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    top: 30%;
+    left: 15%;
+    // text-shadow: 2px 1px 2px #DEDEDE;
+    font-size: x-large;
+    letter-spacing: 2px;
+}
+
+.image-perfil {
+    width: 220px;
+    border-radius: 40px;
+    border: 2px solid #DEDEDE;
+    text-align: center;
+}
+
+.code {
+    font-family: 'Source Code Pro', monospace;
+}
