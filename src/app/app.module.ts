@@ -12,6 +12,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectService } from './services/project.service';
+import { AboutMeService } from './services/about-me.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ProjectService } from './services/project.service';
     CardModule
   ],
   providers: [
-    ProjectService
+    ProjectService,
+    AboutMeService
   ],
   bootstrap: [AppComponent]
 })
