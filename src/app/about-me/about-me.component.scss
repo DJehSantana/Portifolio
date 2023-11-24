@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo&family=Source+Code+Pro&display=swap');
 
 .background {
     width: 100vw;
@@ -18,7 +19,7 @@
     justify-content: space-between;
     position: relative;
     top: 30%;
-    left: 15%;
+    left: 12%;
     // text-shadow: 2px 1px 2px #DEDEDE;
     font-size: x-large;
     letter-spacing: 2px;
@@ -26,11 +27,52 @@
 
 .image-perfil {
     width: 220px;
-    border-radius: 40px;
-    border: 2px solid #DEDEDE;
+    border-radius: 90px;
+    // border: 1px solid #DEDEDE;
     text-align: center;
 }
 
 .code {
     font-family: 'Source Code Pro', monospace;
+}
+
+.img_about_me {
+    width: 480px;
+}
+
+.text_about_me {
+    font-family: 'Exo', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    padding: 2rem;
+
+    p {
+        font-size: 1.1rem;
+    }
+}
+
+.icons {
+    display: flex;
+
+    img {
+        margin-right: 0.5rem;
+        width: 50px;
+        height: 50px;
+    }
+
+    img:hover {
+        opacity: 0.7;
+    }
+}
+
+
+
+::ng-deep .p-card-content {
+    display: flex;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+::ng-deep .p-card-body {
+    padding: 0;
 }

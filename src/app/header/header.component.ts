@@ -13,15 +13,21 @@ export class HeaderComponent implements OnInit {
     this.items = [
       {
         label: 'Sobre mim',
-        icon: 'pi pi-fw pi-user'
+        icon: 'pi pi-fw pi-user',
+        routerLink: 'about-me',
+        fragment: 'aboutMe'
       },
       {
         label: 'Projetos',
-        icon: 'pi pi-fw pi-desktop'
+        icon: 'pi pi-fw pi-desktop',
+        routerLink: 'projects',
+        fragment: 'myProjects'
       },
       {
         label: 'Contato',
-        icon: 'pi pi-fw pi-whatsapp'
+        icon: 'pi pi-fw pi-whatsapp',
+        routerLink: 'footer',
+        fragment: 'contact'
       }
     ]
 

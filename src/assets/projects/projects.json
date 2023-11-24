@@ -1,0 +1,21 @@
+{
+    "id": "1",
+    "projects": [
+        {
+            "name": "Gerenciador de Tarefas",
+            "description": "Poderosa aplicação desenvolvida durante a formação fullstack de Javascript da Devaria. A aplicação, estilo to-do-list, desenvolvida com ReactJs e NodeJs, integrada a uma base de dados que utiliza o MongoDB Atlas. A aplicação permite o gerenciamento de tarefas diárias através de cadastro, edição e deleção das tarefas. Também é possível filtrar as tarefas cadastradas por data e por status. A aplicação também conta um sistema de autenticação de login. ",
+            "image": "../../assets/images/gerenciador_tarefas.jpeg",
+            "link": ""
+        },
+        {
+            "name": "Lanches Mania",
+            "description": "Cardápio dinâmico desenvolvido em Javascript. Se trata de uma landing page onde o cliente cadastra um pedido de acordo com os itens do cardápio. Ao adicionar os itens ao carrinho é calculado o valor total do pedido, que é atualizado sempre que o cliente adiciona ou remove algum item do carrinho. Ao finalizar o pedido exibe uma mensagem de confirmação. A aplicação foi desenvolvida em HTML, CSS, Bootstrap e JS Vanilla.",
+            "image": "../../assets/images/lanches_mania.jpeg"
+        },
+        {
+            "name": "Hotel Alura",
+            "description": "Projeto desenvolvido durante formação de Java da Alura. Trata-se de uma aplicação para cadastro de reservas em um hotel. A Api foi desenvolvida em Java utilizando JPA para conexão com um banco de dados em memória.",
+            "image": "../../assets/images/hotel_alura.jpeg"
+        }
+    ]
+}

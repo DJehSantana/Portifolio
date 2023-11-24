@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { MenubarModule } from 'primeng/menubar';
 import { ButtonModule } from 'primeng/button';
 import { DataViewModule } from 'primeng/dataview';
+import { CardModule } from 'primeng/card';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { AboutMeComponent } from './about-me/about-me.component';
@@ -25,7 +26,8 @@ import { ProjectService } from './services/project.service';
     AppRoutingModule,
     MenubarModule,
     ButtonModule,
-    DataViewModule
+    DataViewModule,
+    CardModule
   ],
   providers: [
     ProjectService

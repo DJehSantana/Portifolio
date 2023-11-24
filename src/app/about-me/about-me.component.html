@@ -12,3 +12,35 @@
     </div>
 
 </div>
+
+<div id="aboutMe">
+    <p-card [style]="{'background-color': 'var(--surface-ground)'} ">
+        <div class="p-p-4 p-d-flex">
+            <div class="p-mr-5">
+                <img src="../../assets/images/sobre_mim.png" class="img_about_me">
+            </div>
+            <div class="text_about_me">
+                <h2 class="p-text-center" style="color: #35D0F2;">Olá, meu nome é Jéssica!</h2>
+                <div class="p-text-center p-mb-lg-4">
+                    <p>Trabalho com Desenvolvimento de Software focado na stack back-end.</p>
+                    <p>Iniciei minha transição de carreira para a área Tech em Fevereiro de 2022. Desde então venho
+                        buscando me aperfeiçoar e aprender
+                        novas tecnologias que me permitam criar soluções inovadoras para os clientes.
+                    </p>
+                    <p>Atualmente estou trabalhando na empresa <span style="color: #35D0F2;">{{empresa}}</span> como
+                        <b>{{cargoAtual}}</b>. Gosto de desafios e de trabalhar em equipe, pois acredito que assim posso
+                        crescer profissionalmente e contribuir para o desenvolvimento do setor.
+                    </p>
+                </div>
+                <h3 class="p-mt-lg-6 p-mt-sm-4 p-mb-lg-4 p-mb-sm-2 p-text-center">Principais
+                    tecnologias com as quais trabalho/trabalhei: </h3>
+                <div class="icons p-mt-lg-6 p-mt-sm-4 p-jc-center">
+                    <div *ngFor="let icon of icons">
+                        <img src="{{icon.urlImage}}" alt="{{icon.altImage}}" title="{{icon.title}}">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </p-card>
+</div>

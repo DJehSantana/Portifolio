@@ -1,19 +1,22 @@
-<div class="p-card p-p-4">
+<div class="p-card p-p-4" id="myProjects">
     <h2>Meus Projetos</h2>
 
     <p-dataView #dv [value]="projects">
         <ng-template let-project pTemplate="listItem">
             <div class="p-col-12">
                 <div class="p-d-flex p-dir-row p-ai-xl-start p-p-4 gap-4">
-                    <img class="p-col-1 p-sm-2 p-xl-1 p-shadow-2 p-d-xl-block border-rounded"
-                        [src]="'../../assets/images/' + project.name + '.jpeg'" [alt]="project.name" />
+                    <img class="p-col-1 p-sm-2 p-xl-1 p-shadow-2 p-d-xl-block border-rounded" src="{{project.image}}"
+                        [alt]="project.name" />
                     <div class="p-d-flex p-dir-col p-ai-center p-ai-xl-start p-jc-between flex-1 gap-3 p-pt-3">
-                        <div class="p-text-bold">{{ project.name }}</div>
+                        <div class="p-text-bold" style="font-size: 1.2rem;"><span>{{ project.name }}</span></div>
                         <div class="p-d-flex p-ai-center">
                             <span class="p-d-flex p-ai-center gap-2">
                                 <span class="font-semibold">{{ project.description }}</span>
                             </span>
                         </div>
+                        <ng-template *ngIf="project.link">
+                            <a href="{{project.link}}"></a>
+                        </ng-template>
                     </div>
                 </div>
             </div>
